@@ -1,0 +1,43 @@
+{
+    "name": "daniel-de-wit/nova-single-record-resource",
+    "description": "Laravel Nova Single Record Resource. Shows a link in the navigation bar directly to the only record of the resource",
+    "keywords": [
+        "laravel",
+        "Nova"
+    ],
+    "homepage": "https://github.com/daniel-de-wit",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniël de Wit",
+            "email": "daniel@danieldewit.nl",
+            "homepage": "https://github.com/daniel-de-wit",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "DanielDeWit\\NovaSingleRecordResource\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "scripts": {
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DanielDeWit\\NovaSingleRecordResource\\NovaSingleRecordResourceServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
