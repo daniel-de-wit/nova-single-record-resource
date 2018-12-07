@@ -48,7 +48,7 @@ class MyResource extends Resource
 
 Publish the view template:
 ```
-php artisan vendor:publish --force --provider="DanielDeWit\NovaSingleRecordResource\Providers\NovaSingleRecordResourceServiceProvider"
+php artisan vendor:publish --tag=nova-views
 ```
 
 ## Important
