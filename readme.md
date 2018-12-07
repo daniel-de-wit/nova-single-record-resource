@@ -46,12 +46,51 @@ class MyResource extends Resource
 }
 ```
 
+Optionally override the resource identifier.
+
+```php
+class MyResource extends Resource
+{
+    /**
+     * @return string|int
+     */
+    public static function singleRecordId(): bool
+    {
+        return 1;
+    }
+}
+```
+
 Publish the view template:
 ```
-php artisan vendor:publish --force --provider="DanielDeWit\NovaSingleRecordResource\Providers\NovaSingleRecordResourceServiceProvider"
+php artisan vendor:publish --tag=nova-views
 ```
 
-## Important
+## How it works
 
-Laravel Nova currently does not support an integration without overriding the navigation blade template.
-Therefore a vendor publish is required with the force flag.
+Laravel Nova has the ability to override the Blade template used to render the navigation sidebar.
+The template is copied from Nova version v1.2.0 and altered with a few lines to support linking a resource directly to the detail view.
+When publishing vendor assets with the tag `nova-views` the template will be placed in the project `resources/views/vendor/nova/resources` folder.
+
+```php
+@if ($resource::singleRecord())
+    <router-link :to="{
+    name: 'detail',
+    params: {
+        resourceName: '{{ $resource::uriKey() }}',
+        resourceId: {{ $resource::firstRecordId() }}
+    }
+}" class="text-white text-justify no-underline dim">
+        {{ $resource::label() }}
+    </router-link>
+@else
+    <router-link :to="{
+    name: 'index',
+    params: {
+        resourceName: '{{ $resource::uriKey() }}'
+    }
+}" class="text-white text-justify no-underline dim">
+        {{ $resource::label() }}
+    </router-link>
+@endif
+```

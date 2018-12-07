@@ -9,7 +9,10 @@ trait SupportSingleRecordNavigationLinks
         return false;
     }
 
-    public static function firstRecordId(): int
+    /**
+     * @return string|int
+     */
+    public static function singleRecordId()
     {
         return 1;
     }

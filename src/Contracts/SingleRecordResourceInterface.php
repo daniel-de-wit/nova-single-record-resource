@@ -6,5 +6,8 @@ interface SingleRecordResourceInterface
 {
     public static function singleRecord(): bool;
 
-    public static function firstRecordId(): int;
+    /**
+     * @return string|int
+     */
+    public static function singleRecordId();
 }
