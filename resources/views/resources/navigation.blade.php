@@ -25,7 +25,7 @@
                             name: 'detail',
                             params: {
                                 resourceName: '{{ $resource::uriKey() }}',
-                                resourceId: {{ $resource::firstRecordId() }}
+                                resourceId: {{ $resource::singleRecordId() }}
                             }
                         }" class="text-white text-justify no-underline dim">
                                 {{ $resource::label() }}
