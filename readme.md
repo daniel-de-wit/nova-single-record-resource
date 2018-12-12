@@ -19,7 +19,7 @@ Useful for models that will contain only a single record.
 $ composer require daniel-de-wit/nova-single-record-resource
 ```
 
-Modify `app/Nova/Resource.php` to implement `SingleRecordResourceInterface` and the `SingleRecord` trait:
+Modify `app/Nova/Resource.php` to implement `SingleRecordResourceInterface` and the `SupportSingleRecordNavigationLinks` trait:
 
 ```php
 <?php
