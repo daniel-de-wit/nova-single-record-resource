@@ -3,7 +3,7 @@
 Adds the ability to create a navigation link directly to the detail page of a resource.
 Useful for models that will contain only a single record.
 
-![](https://github.com/daniel-de-wit/nova-single-record-resource/blob/master/demo.gif)
+![](https://github.com/daniel-de-wit/nova-single-record-resource/raw/master/demo.gif)
 
 ## Prerequisites
  - [Laravel](https://laravel.com/)
