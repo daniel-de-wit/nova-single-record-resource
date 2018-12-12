@@ -2,6 +2,7 @@
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://packagist.org/packages/daniel-de-wit/nova-single-record-resource)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/daniel-de-wit/nova-single-record-resource.svg?style=flat-square)](https://packagist.org/packages/daniel-de-wit/nova-single-record-resource)
 [![Total Downloads](https://img.shields.io/packagist/dt/daniel-de-wit/nova-single-record-resource.svg?style=flat-square)](https://packagist.org/packages/daniel-de-wit/nova-single-record-resource)
+[![StyleCI](https://github.styleci.io/repos/160710362/shield?branch=master)](https://github.styleci.io/repos/160710362)
 
 Adds the ability to create a navigation link directly to the detail page of a resource.
 Useful for models that will contain only a single record.
