@@ -1,4 +1,7 @@
 # Laravel Nova: Single Record Resource
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://packagist.org/packages/daniel-de-wit/nova-single-record-resource)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/daniel-de-wit/nova-single-record-resource.svg?style=flat-square)](https://packagist.org/packages/daniel-de-wit/nova-single-record-resource)
+[![Total Downloads](https://img.shields.io/packagist/dt/daniel-de-wit/nova-single-record-resource.svg?style=flat-square)](https://packagist.org/packages/daniel-de-wit/nova-single-record-resource)
 
 Adds the ability to create a navigation link directly to the detail page of a resource.
 Useful for models that will contain only a single record.
