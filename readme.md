@@ -86,6 +86,7 @@ When publishing vendor assets with the tag `nova-views` the template will be pla
 
 <details>
 <summary>View changes</summary>
+
 ```php
 @if ($resource::singleRecord())
     <router-link :to="{
