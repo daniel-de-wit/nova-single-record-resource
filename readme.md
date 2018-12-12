@@ -3,6 +3,8 @@
 Adds the ability to create a navigation link directly to the detail page of a resource.
 Useful for models that will contain only a single record.
 
+![](https://github.com/daniel-de-wit/nova-single-record-resource/blob/master/demo.gif)
+
 ## Prerequisites
  - [Laravel](https://laravel.com/)
  - [Laravel Nova](https://nova.laravel.com/)
@@ -31,6 +33,21 @@ abstract class Resource extends NovaResource implements SingleRecordResourceInte
     ...
 }
 ```
+
+Publish assets:
+```
+$ php artisan vendor:publish --provider="DanielDeWit\NovaSingleRecordResource\Providers\NovaSingleRecordResourceServiceProvider"
+```
+
+
+## Update
+
+When updating it is important to republish the assets, like so:
+
+```
+$ php artisan vendor:publish --force --provider="DanielDeWit\NovaSingleRecordResource\Providers\NovaSingleRecordResourceServiceProvider"
+```
+
 
 ## Usage
 
@@ -61,17 +78,14 @@ class MyResource extends Resource
 }
 ```
 
-Publish the view template:
-```
-php artisan vendor:publish --tag=nova-views
-```
-
 ## How it works
 
 Laravel Nova has the ability to override the Blade template used to render the navigation sidebar.
 The template is copied from Nova version v1.2.0 and altered with a few lines to support linking a resource directly to the detail view.
 When publishing vendor assets with the tag `nova-views` the template will be placed in the project `resources/views/vendor/nova/resources` folder.
 
+<details>
+<summary>View changes</summary>
 ```php
 @if ($resource::singleRecord())
     <router-link :to="{
@@ -94,3 +108,4 @@ When publishing vendor assets with the tag `nova-views` the template will be pla
     </router-link>
 @endif
 ```
+</details>
