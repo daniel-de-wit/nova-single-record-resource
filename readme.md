@@ -97,7 +97,7 @@ When publishing vendor assets with the tag `nova-views` the template will be pla
     name: 'detail',
     params: {
         resourceName: '{{ $resource::uriKey() }}',
-        resourceId: {{ $resource::firstRecordId() }}
+        resourceId: {{ $resource::singleRecordId() }}
     }
 }" class="text-white text-justify no-underline dim">
         {{ $resource::label() }}
