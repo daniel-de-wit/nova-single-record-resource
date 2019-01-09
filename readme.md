@@ -53,6 +53,26 @@ $ php artisan vendor:publish --force --provider="DanielDeWit\NovaSingleRecordRes
 ```
 
 
+## Uninstallation
+
+Remove from composer
+
+```
+$ composer remove daniel-de-wit/nova-single-record-resource
+```
+
+Remove `SupportSingleRecordNavigationLinks` trait from your Nova Resources
+
+```
+use SupportSingleRecordNavigationLinks;
+```
+
+Remove the customized navigation template
+
+```
+rm resources/views/vendor/nova/resources/navigation.blade.php
+```
+
 ## Usage
 
 Place the following method on models that have only a single record.
