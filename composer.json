@@ -2,17 +2,17 @@
     "name": "daniel-de-wit/nova-single-record-resource",
     "description": "Laravel Nova Single Record Resource. Shows a link in the navigation bar directly to the only record of the resource",
     "keywords": [
-        "laravel",
+        "Laravel",
         "Nova"
     ],
-    "homepage": "https://github.com/daniel-de-wit",
+    "homepage": "https://github.com/daniel-de-wit/nova-single-record-resource",
     "license": "MIT",
     "authors": [
         {
             "name": "Daniël de Wit",
             "email": "daniel@danieldewit.nl",
             "homepage": "https://github.com/daniel-de-wit",
-            "role": "Developer"
+            "role": "Maintainer"
         }
     ],
     "require": {
