@@ -1,6 +1,7 @@
 <?php
 
 namespace DanielDeWit\NovaSingleRecordResource\Traits;
+
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
 use Laravel\Nova\Authorizable;
