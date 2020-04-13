@@ -34,7 +34,9 @@ trait SupportSingleRecordNavigationLinks
      */
     public function authorizeTo(Request $request, $ability)
     {
-        throw_unless(((int) $request->route('resourceId') === (int) static::singleRecordId()), AuthorizationException::class);
+        if (static::singleRecord()) {
+            throw_unless(((int) $request->route('resourceId') === (int) static::singleRecordId()), AuthorizationException::class);
+        }
         parent::authorizeTo($request, $ability);
     }
 }
