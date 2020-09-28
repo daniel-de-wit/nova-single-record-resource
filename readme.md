@@ -21,18 +21,17 @@ Useful for models that will contain only a single record.
 $ composer require daniel-de-wit/nova-single-record-resource
 ```
 
-Modify `app/Nova/Resource.php` to implement `SingleRecordResourceInterface` and the `SupportSingleRecordNavigationLinks` trait:
+Add  `SupportSingleRecordNavigationLinks` trait to Resources:
 
 ```php
 <?php
 
 namespace App\Nova;
 
-use DanielDeWit\NovaSingleRecordResource\Contracts\SingleRecordResourceInterface;
 use DanielDeWit\NovaSingleRecordResource\Traits\SupportSingleRecordNavigationLinks;
 use Laravel\Nova\Resource as NovaResource;
 
-abstract class Resource extends NovaResource implements SingleRecordResourceInterface
+abstract class Resource extends NovaResource
 {
     use SupportSingleRecordNavigationLinks;
 
