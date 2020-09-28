@@ -15,7 +15,7 @@
         <ul class="list-reset mb-8">
             @foreach($resources as $resource)
                 <li class="leading-tight mb-4 ml-8 text-sm">
-                    @if ($resource::singleRecord())
+                    @if (method_exists($resource, 'singleRecord') && $resource::singleRecord())
                         <router-link :to="{
                             name: 'detail',
                             params: {
