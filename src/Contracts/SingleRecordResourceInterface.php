@@ -1,6 +1,6 @@
 <?php
 
-namespace DanielDeWit\NovaSingleRecordResource\Contracts;
+namespace Marko298\NovaSingleRecordResource\Contracts;
 
 interface SingleRecordResourceInterface
 {

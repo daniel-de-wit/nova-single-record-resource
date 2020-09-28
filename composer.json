@@ -1,17 +1,24 @@
 {
-    "name": "daniel-de-wit/nova-single-record-resource",
+    "name": "marko298/nova-single-record-resource",
     "description": "Laravel Nova Single Record Resource. Shows a link in the navigation bar directly to the only record of the resource",
     "keywords": [
         "Laravel",
         "Nova"
     ],
-    "homepage": "https://github.com/daniel-de-wit/nova-single-record-resource",
+    "homepage": "https://github.com/marko298/nova-single-record-resource",
     "license": "MIT",
     "authors": [
         {
             "name": "Daniël de Wit",
             "email": "daniel@danieldewit.nl",
             "homepage": "https://github.com/daniel-de-wit",
+            "role": "Maintainer"
+        },
+
+        {
+            "name": "Mark Boychuk",
+            "email": "boychuk.m.n@gmail.com",
+            "homepage": "https://github.com/marko298",
             "role": "Maintainer"
         }
     ],
@@ -22,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DanielDeWit\\NovaSingleRecordResource\\": "src"
+            "Marko298\\NovaSingleRecordResource\\": "src"
         }
     },
     "autoload-dev": {
@@ -34,7 +41,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DanielDeWit\\NovaSingleRecordResource\\Providers\\NovaSingleRecordResourceServiceProvider"
+                "Marko298\\NovaSingleRecordResource\\Providers\\NovaSingleRecordResourceServiceProvider"
             ]
         }
     },
