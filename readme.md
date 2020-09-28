@@ -1,15 +1,15 @@
 # Laravel Nova: Single Record Resource
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://packagist.org/packages/daniel-de-wit/nova-single-record-resource)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/daniel-de-wit/nova-single-record-resource.svg?style=flat-square)](https://packagist.org/packages/daniel-de-wit/nova-single-record-resource)
-[![Total Downloads](https://img.shields.io/packagist/dt/daniel-de-wit/nova-single-record-resource.svg?style=flat-square)](https://packagist.org/packages/daniel-de-wit/nova-single-record-resource)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://packagist.org/packages/marko298/nova-single-record-resource)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/marko298/nova-single-record-resource.svg?style=flat-square)](https://packagist.org/packages/marko298/nova-single-record-resource)
+[![Total Downloads](https://img.shields.io/packagist/dt/marko298/nova-single-record-resource.svg?style=flat-square)](https://packagist.org/packages/marko298/nova-single-record-resource)
 [![StyleCI](https://github.styleci.io/repos/160710362/shield?branch=master)](https://github.styleci.io/repos/160710362)
 
-### Fork of [daniel-de-wit/nova-single-record-resource](https://github.com/daniel-de-wit/nova-single-record-resource)
+### Fork of [marko298/nova-single-record-resource](https://github.com/marko298/nova-single-record-resource)
 
 Adds the ability to create a navigation link directly to the detail page of a resource.
 Useful for models that will contain only a single record.
 
-![](https://github.com/daniel-de-wit/nova-single-record-resource/raw/master/demo.gif)
+![](https://github.com/marko298/nova-single-record-resource/raw/master/demo.gif)
 
 ## Prerequisites
  - [Laravel](https://laravel.com/)
@@ -18,7 +18,7 @@ Useful for models that will contain only a single record.
 ## Installation
 
 ```
-$ composer require daniel-de-wit/nova-single-record-resource
+$ composer require marko298/nova-single-record-resource
 ```
 
 Add  `SupportSingleRecordNavigationLinks` trait to Resources:
@@ -59,7 +59,7 @@ $ php artisan vendor:publish --force --provider="Marko298\NovaSingleRecordResour
 Remove from composer
 
 ```
-$ composer remove daniel-de-wit/nova-single-record-resource
+$ composer remove marko298/nova-single-record-resource
 ```
 
 Remove `SupportSingleRecordNavigationLinks` trait from your Nova Resources
