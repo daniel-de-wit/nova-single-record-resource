@@ -1,6 +1,6 @@
 <?php
 
-namespace DanielDeWit\NovaSingleRecordResource\Providers;
+namespace Marko298\NovaSingleRecordResource\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

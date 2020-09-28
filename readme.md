@@ -28,7 +28,7 @@ Add  `SupportSingleRecordNavigationLinks` trait to Resources:
 
 namespace App\Nova;
 
-use DanielDeWit\NovaSingleRecordResource\Traits\SupportSingleRecordNavigationLinks;
+use Marko298\NovaSingleRecordResource\Traits\SupportSingleRecordNavigationLinks;
 use Laravel\Nova\Resource as NovaResource;
 
 abstract class Resource extends NovaResource
@@ -41,7 +41,7 @@ abstract class Resource extends NovaResource
 
 Publish assets:
 ```
-$ php artisan vendor:publish --provider="DanielDeWit\NovaSingleRecordResource\Providers\NovaSingleRecordResourceServiceProvider"
+$ php artisan vendor:publish --provider="Marko298\NovaSingleRecordResource\Providers\NovaSingleRecordResourceServiceProvider"
 ```
 
 
@@ -50,7 +50,7 @@ $ php artisan vendor:publish --provider="DanielDeWit\NovaSingleRecordResource\Pr
 When updating it is important to republish the assets, like so:
 
 ```
-$ php artisan vendor:publish --force --provider="DanielDeWit\NovaSingleRecordResource\Providers\NovaSingleRecordResourceServiceProvider"
+$ php artisan vendor:publish --force --provider="Marko298\NovaSingleRecordResource\Providers\NovaSingleRecordResourceServiceProvider"
 ```
 
 

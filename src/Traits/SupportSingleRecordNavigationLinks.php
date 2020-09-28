@@ -1,6 +1,6 @@
 <?php
 
-namespace DanielDeWit\NovaSingleRecordResource\Traits;
+namespace Marko298\NovaSingleRecordResource\Traits;
 
 trait SupportSingleRecordNavigationLinks
 {
