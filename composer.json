@@ -9,16 +9,15 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Daniël de Wit",
-            "email": "daniel@danieldewit.nl",
-            "homepage": "https://github.com/daniel-de-wit",
-            "role": "Maintainer"
-        },
-
-        {
             "name": "Mark Boychuk",
             "email": "boychuk.m.n@gmail.com",
             "homepage": "https://github.com/marko298",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Daniël de Wit",
+            "email": "daniel@danieldewit.nl",
+            "homepage": "https://github.com/daniel-de-wit",
             "role": "Maintainer"
         }
     ],
