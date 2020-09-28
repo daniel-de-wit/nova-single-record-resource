@@ -4,6 +4,8 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/daniel-de-wit/nova-single-record-resource.svg?style=flat-square)](https://packagist.org/packages/daniel-de-wit/nova-single-record-resource)
 [![StyleCI](https://github.styleci.io/repos/160710362/shield?branch=master)](https://github.styleci.io/repos/160710362)
 
+### Fork of [daniel-de-wit/nova-single-record-resource](https://github.com/daniel-de-wit/nova-single-record-resource)
+
 Adds the ability to create a navigation link directly to the detail page of a resource.
 Useful for models that will contain only a single record.
 
@@ -112,7 +114,7 @@ When publishing vendor assets with the tag `nova-views` the template will be pla
 <summary>View changes</summary>
 
 ```php
-@if ($resource::singleRecord())
+@if (method_exists($resource, 'singleRecord') && $resource::singleRecord())
     <router-link :to="{
     name: 'detail',
     params: {
