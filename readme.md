@@ -95,7 +95,7 @@ class MyResource extends Resource
     /**
      * @return string|int
      */
-    public static function singleRecordId(): bool
+    public static function singleRecordId()
     {
         return 1;
     }
