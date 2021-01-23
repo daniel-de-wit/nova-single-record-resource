@@ -20,7 +20,7 @@
                             name: 'detail',
                             params: {
                                 resourceName: '{{ $resource::uriKey() }}',
-                                resourceId: {{ $resource::singleRecordId() }}
+                                resourceId: '{{ $resource::singleRecordId() }}'
                             }
                         }" class="text-white text-justify no-underline dim">
                             {{ $resource::label() }}
