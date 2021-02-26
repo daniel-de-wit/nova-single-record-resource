@@ -16,6 +16,15 @@
             @foreach($resources as $resource)
                 <li class="leading-tight mb-4 ml-8 text-sm">
                     @if (method_exists($resource, 'singleRecord') && $resource::singleRecord())
+                        @if(call_user_func([$resource::$model, 'count']) === 0)
+                        <router-link :to="{
+                            name: 'create',
+                            params: {
+                                resourceName: '{{ $resource::uriKey() }}'
+                            }
+                        }" class="text-white text-justify no-underline dim">
+                            {{ $resource::label() }}
+                        @else
                         <router-link :to="{
                             name: 'detail',
                             params: {
@@ -25,6 +34,7 @@
                         }" class="text-white text-justify no-underline dim">
                             {{ $resource::label() }}
                         </router-link>
+                        @endif
                     @else
                         <router-link :to="{
                         name: 'index',
